@@ -1,8 +1,8 @@
-# w3css
-W3.CSS - CSS Framework
+# w3scss
+W3.SCSS - Developer friendly version of W3.CSS
 
-Official framework added by author Jan Egil Refsnes.
+Inspired by the Official framework added by author Jan Egil Refsnes.
 
-Tutorials at https://www.w3schools.com/w3css
+
 
 
