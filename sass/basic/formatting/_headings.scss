@@ -1,0 +1,38 @@
+h1 { // Extract 1: Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari.
+    font-size: 2em;
+    margin: 0.67em 0;
+
+    font-size: $font-size__h1;
+}
+
+h2 {
+    font-size: $font-size__h2;
+}
+
+h3 {
+    font-size: $font-size__h3;
+}
+
+h4 {
+    font-size: $font-size__h4;
+}
+
+h5 {
+    font-size: $font-size__h5;
+}
+
+h6 {
+    font-size: $font-size__h6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family__heading;
+    font-weight: 400;
+    margin: 10px 0;
+    clear: both;
+}

@@ -1,0 +1,103 @@
+button {
+    font-family: inherit; // Extract 1: Change the font styles in all browsers.
+    font-size: 100%; // Extract 1: Change the font styles in all browsers.
+    line-height: 1.15; // Extract 1: Change the font styles in all browsers.
+    margin: 0; // Extract 1: Remove the margin in Firefox and Safari.
+
+    overflow: visible; // Extract 1: Show the overflow in IE.
+
+    text-transform: none; // Extract 1: Remove the inheritance of text transform in Edge, Firefox, and IE.
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button; // Extract 1: Correct the inability to style clickable types in iOS and Safari.
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none; // Extract 1: Remove the inner border in Firefox.
+    padding: 0; // Extract 1: Remove the padding in Firefox.
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText; // Extract 1: Restore the focus styles unset by the previous rule.
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto; // Correct the cursor style of increment and decrement buttons in Chrome.
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; // Extract 1: Correct the inability to style clickable types in iOS and Safari.
+    font: inherit; // Extract 1: Change font properties to `inherit` in Safari.
+}
+
+%button, 
+.#{$b}-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+
+    &:disabled {
+        @extend %disabled;
+    }
+}
+
+.#{$b}-button {
+    &:hover {
+        color: #000!important;
+        background-color: #ccc!important;
+    }
+}
+
+%disabled,
+.#{$b}-disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+
+.#{$b}-disabled,
+:disabled {
+    * {
+        pointer-events: none;
+    }
+}
+
+.#{$b}-btn {
+    @extend %button;
+
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &.disabled,
+    &:disabled {
+        &:hover {
+            box-shadow: none;
+        }
+    }
+}

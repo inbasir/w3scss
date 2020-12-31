@@ -1,0 +1,23 @@
+img {
+    border-style: none; // Extract 1: Remove the border on images inside links in IE 10.
+
+    vertical-align: middle;
+}
+
+figure,
+figcaption {
+    display: block;
+}
+
+figure {
+    margin: 1em 40px;
+}
+
+canvas {
+    display: inline-block;
+}
+
+.#{$b}-images {
+    max-width: 100%;
+    height: auto;
+}

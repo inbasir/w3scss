@@ -1,0 +1,83 @@
+b,
+strong {
+    font-weight: bolder; // Extract 1: Add the correct font weight in Chrome, Edge, and Safari.
+}
+
+pre {
+    font-family: $font-family__pre; // Extract 1: Correct the inheritance and scaling of font size in all browsers.
+    font-size: 1em; // Extract 1: Correct the odd `em` font sizing in all browsers.
+}
+
+abbr[title] {
+border-bottom: none; // Extract 1: Remove the bottom border in Chrome 57-
+text-decoration: underline; // Extract 1: Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+text-decoration: underline dotted; // Extract 1: Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+}
+
+code,
+kbd,
+samp,
+var {
+    font-family: $font-family__code; // Extract 1: Correct the inheritance and scaling of font size in all browsers.
+    font-size: 1em; // Extract 1: Correct the odd `em` font sizing in all browsers.
+}
+
+small {
+    font-size: 80%; // Extract 1: Add the correct font size in all browsers.
+}
+
+sub,
+sup { // Extract 1: Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em; // Extract 1:
+}
+
+sup {
+    top: -0.5em; // Extract 1:
+}
+
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+
+mark {
+    background: $color__background-mark;
+    color: #000;
+}
+
+.#{$b}-wide {
+    letter-spacing: 4px;
+}
+
+.#{$b}-code,
+.#{$b}-codespan {
+    font-family: Consolas, "courier new";
+    font-size: 16px;
+}
+
+.#{$b}-code {
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word;
+}
+
+.#{$b}-codespan {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%;
+}

@@ -1,0 +1,8 @@
+a {
+    background-color: transparent; // Extract 1: Remove the gray background on active links in IE 10.
+
+    &:active,
+    &:hover {
+        outline-width: 0;
+    }
+}

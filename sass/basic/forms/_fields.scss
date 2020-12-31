@@ -1,0 +1,78 @@
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; // Extract 1: Change the font styles in all browsers.
+    font-size: 100%; // Extract 1: Change the font styles in all browsers.
+    line-height: 1.15; // Extract 1: Change the font styles in all browsers.
+    margin: 0; // Extract 1: Remove the margin in Firefox and Safari.
+}
+
+input {
+    overflow: visible; // Extract 1: Show the overflow in Edge.
+}
+
+select {
+    text-transform: none; // Extract 1: Remove the inheritance of text transform in Firefox.
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em; // Extract 1: Correct the padding in Firefox.
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+}
+
+optgroup {
+    font-weight: bold;
+}
+
+legend {
+    box-sizing: border-box; // Extract 1: Correct the text wrapping in Edge and IE.
+    color: inherit; // Extract 1: Correct the color inheritance from `fieldset` elements in IE.
+    display: table; // Extract 1: Correct the text wrapping in Edge and IE.
+    max-width: 100%; // Extract 1: Correct the text wrapping in Edge and IE.
+    padding: 0; // Extract 1: Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers.
+    white-space: normal; // Extract 1: Correct the text wrapping in Edge and IE.
+}
+
+textarea {
+    overflow: auto; // Extract 1: Remove the default vertical scrollbar in IE 10+.
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box; // Extract 1: Add the correct box sizing in IE 10.
+    padding: 0; // Extract 1: Remove the padding in IE 10.
+}
+
+[type="search"] {
+    -webkit-appearance: textfield; // Extract 1: Correct the odd appearance in Chrome and Safari.
+    outline-offset: -2px; // Extract 1: Correct the outline style in Safari.
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; // Extract 1: Remove the inner padding in Chrome and Safari on macOS.
+}
+
+.#{$b}-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+.#{$b}-select {
+    padding: 9px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.#{$b}-check,
+.#{$b}-radio {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 6px;
+}

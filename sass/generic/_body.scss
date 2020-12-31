@@ -1,0 +1,7 @@
+body {
+    margin: 0; // Extract 1: Remove the margin in all browsers.
+
+    font-family: $font-family__primary;
+    font-size: $font-size__primary;
+    line-height: $line-height__primary;
+}

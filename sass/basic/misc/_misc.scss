@@ -1,0 +1,12 @@
+progress {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+template {
+    display: none; // Extract 1: Add the correct display in IE 10+.
+}
+
+[hidden] {
+    display: none; // Extract 1: Add the correct display in IE 10.
+}

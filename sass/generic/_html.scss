@@ -1,0 +1,12 @@
+html {
+    line-height: 1.15; // Extract 1: Correct the line height in all browsers.
+    -webkit-text-size-adjust: 100%; // Extract 1: Prevent adjustments of font size after orientation changes in iOS.
+    -ms-text-size-adjust: 100%;
+
+    font-family: $font-family__primary;
+    font-size: $font-size__primary;
+    line-height: $line-height__primary;
+    
+    box-sizing: border-box;
+    overflow-x: hidden;
+}

@@ -1,0 +1,9 @@
+hr {
+    box-sizing: content-box; // Extract 1: Add the correct box sizing in Firefox.
+    height: 0; // Extract 1: Add the correct box sizing in Firefox.
+    overflow: visible; // Extract 1: Show the overflow in Edge and IE.
+
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}

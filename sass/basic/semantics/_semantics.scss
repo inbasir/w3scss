@@ -1,0 +1,15 @@
+article,
+aside,
+details, // Extract 1: Add the correct display in Edge, IE 10+, and Firefox.
+footer,
+header,
+main, // Extract 1: Render the `main` element consistently in IE.
+menu,
+nav,
+section {
+    display: block;
+}
+
+summary {
+    display: list-item; // Extract 1: Add the correct display in all browsers.
+}
