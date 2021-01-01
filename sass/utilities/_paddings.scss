@@ -1,0 +1,49 @@
+.#{$b}-padding {
+    @include padding;
+
+    &-small {
+        @include padding(small);
+    }
+
+    &-large {
+        @include padding(large);
+    }
+
+    &-16 {
+        @include padding(y);
+    }
+
+    &-24 {
+        @include padding(y, 24);
+    }
+
+    &-32 {
+        @include padding(y, 32);
+    }
+
+    &-48 {
+        @include padding(y, 48);
+    }
+
+    &-64 {
+        @include padding(y, 64);
+    }
+
+    &-top {
+        &-24 {
+            @include padding(top, 24)
+        }
+
+        &-32 {
+            @include padding(top, 32)
+        }
+
+        &-48 {
+            @include padding(top, 48)
+        }
+
+        &-64 {
+            @include padding(top, 64)
+        }
+    }
+}

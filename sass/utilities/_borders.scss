@@ -1,0 +1,67 @@
+.#{$b}-border {
+    @include border;
+
+    &-0 {
+        @include border(none);
+    }
+
+    &-top {
+        @include border(top);
+    }
+
+    &-bottom {
+        @include border(bottom);
+    }
+
+    &-left {
+        @include border(left);
+    }
+
+    &-right {
+        @include border(right);
+    }
+
+    &-topbar {
+        @include border(topbar);
+    }
+
+    &-bottombar {
+        @include border(bottombar);
+    }
+
+    &-leftbar {
+        @include border(leftbar);
+    }
+
+    &-rightbar {
+        @include border(rightbar);
+    }
+}
+
+.#{$b}-circle {
+    @include circle;
+}
+
+.#{$b}-round {
+    @include round;
+
+    &-small {
+        @include round(small);
+    }
+
+    &-medium {
+        @include round(medium);
+    }
+
+    &-large {
+        @include round(large);
+    }
+
+    &-xlarge {
+        @include round(xlarge);
+    }
+
+    &-xxlarge {
+        @include round(xxlarge);
+    }
+}

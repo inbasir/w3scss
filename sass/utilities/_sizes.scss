@@ -1,0 +1,33 @@
+.#{$b}- {
+    &tiny {
+        @include size(tiny);
+    }
+
+    &small {
+        @include size(small);
+    }
+
+    &medium {
+        @include size(medium);
+    }
+
+    &large {
+        @include size(large);
+    }
+
+    &xlarge {
+        @include size(xlarge);
+    }
+
+    &xxlarge {
+        @include size(xxlarge);
+    }
+
+    &xxxlarge {
+        @include size(xxxlarge);
+    }
+
+    &jumbo {
+        @include size(jumbo);
+    }
+}

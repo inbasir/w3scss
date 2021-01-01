@@ -1,0 +1,19 @@
+.#{$b}-margin {
+    @include margin(all);
+
+    &-top {
+        @include margin(top);
+    }
+
+    &-bottom {
+        @include margin(bottom);
+    }
+
+    &-left {
+        @include margin(left);
+    }
+
+    &-right {
+        @include margin(right);
+    }
+}

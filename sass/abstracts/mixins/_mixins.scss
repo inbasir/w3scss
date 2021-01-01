@@ -1,1 +1,125 @@
-//
+// Alignments
+@mixin align($arg: left) {
+    @if $arg == left {
+        text-align: left!important;
+    } @else if $arg == right {
+        text-align: right!important;
+    } @else if $arg == justify {
+        text-align: justify;
+    } @else if $arg == center {
+        text-align: center;
+    } @else {
+        @error "Align '#{$arg}' must be one of these values: left, right, justify or center.";
+    }
+}
+
+// Margins
+@mixin margin($arg: all, $val: 16px) {
+    @if $arg == all {
+        margin: #{$val}!important;
+    } @else if $arg == top {
+        margin-top: #{$val}!important;
+    } @else if $arg == bottom {
+        margin-bottom: #{$val}!important;
+    } @else if $arg == left {
+        margin-left: #{$val}!important;
+    } @else if $arg == right {
+        margin-right: #{$val}!important;
+    } @else {
+        @error "Margin '#{$arg}' must be one of these values: all, top, bottom, left or right.";
+    }
+}
+
+// Paddings
+$u: px;
+@mixin padding($arg: medium, $val: 16) {
+    @if $arg == small {
+        padding: #{$val * 0.25 + $u} #{$val * 0.5 + $u}!important;
+    } @else if $arg == medium {
+        padding: #{$val * 0.5 + $u} #{$val * 1 + $u}!important;
+    } @else if $arg == large {
+        padding: #{$val * 0.75 + $u} #{$val * 1.5 + $u}!important;
+    } @else if $arg == x {
+        padding-left: #{$val + $u}!important;
+        padding-right: #{$val + $u}!important;
+    } @else if $arg == y {
+        padding-top: #{$val $u}!important;
+        padding-bottom: #{$val + $u}!important;
+    } @else if $arg == top {
+        padding-top: #{$val + $u}!important;
+    } @else {
+        @error "Padding '#{$arg}' must be one of these values: small, medium, large, x, y or top.";
+    }
+}
+
+// Borders
+@mixin border($arg: all, $val: 1px, $val__line: solid, $val__color: #ccc) {
+    @if $arg == none {
+        border: 0!important;
+    } @else if $arg == all {
+        border: #{$val} #{$val__line} #{$val__color}!important;
+    } @else if $arg == top {
+        border-top: #{$val} #{$val__line} #{$val__color}!important;
+    } @else if $arg == bottom {
+        border-bottom: #{$val} #{$val__line} #{$val__color}!important;
+    } @else if $arg == left {
+        border-left: #{$val} #{$val__line} #{$val__color}!important;
+    } @else if $arg == right {
+        border-right: #{$val} #{$val__line} #{$val__color}!important;
+    } @else if $arg == topbar {
+        border-top: #{$val * 6} #{$val__line} #{$val__color};
+    } @else if $arg == bottombar {
+        border-bottom: #{$val * 6} #{$val__line} #{$val__color};
+    } @else if $arg == leftbar {
+        border-left: #{$val * 6} #{$val__line} #{$val__color};
+    } @else if $arg == rightbar {
+        border-right: #{$val * 6} #{$val__line} #{$val__color};
+    } @else {
+        @error "Border '#{$arg}' must be one of these values: none, all, top, bottom, left, right, topbar, bottombar, leftbar or rightbar.";
+    }
+}
+
+// Circle
+@mixin circle {
+    border-radius: 50%;
+}
+
+// Rounds
+@mixin round($arg: medium, $val: 16) {
+    @if $arg == small {
+        border-radius: #{$val * 0.125 +$u};
+    } @else if $arg == medium {
+        border-radius: #{$val * 0.25 +$u};
+    } @else if $arg == large {
+        border-radius: #{$val * 0.5 +$u};
+    } @else if $arg == xlarge {
+        border-radius: #{$val * 1 +$u};
+    } @else if $arg == xxlarge {
+        border-radius: #{$val * 2 +$u};
+    } @else {
+        @error "Round '#{$arg}' must be one of these values: small, medium, large, xlarge or xxlarge.";
+    }
+}
+
+// Font sizes
+@mixin size($arg, $val: 16px) {
+    @if $arg == tiny {
+        font-size: #{$val * 0.625}!important;
+    } @else if $arg == small {
+        font-size: #{$val * 0.75}!important;
+    } @else if $arg == medium {
+        font-size: #{$val * 0.9375}!important;
+    } @else if $arg == large {
+        font-size: #{$val * 1.125}!important;
+    } @else if $arg == xlarge {
+        font-size: #{$val * 1.5}!important;
+    } @else if $arg == xxlarge {
+        font-size: #{$val * 2.25}!important;
+    } @else if $arg == xxxlarge {
+        font-size: #{$val * 3}!important;
+    } @else if $arg == jumbo {
+        font-size: #{$val * 4}!important;
+    } @else {
+        @error "Size '#{$arg}' must be one of these values: tiny, small, medium, large, xlarge, xxlarge, xxxlarge or jumbo.";
+    }
+}

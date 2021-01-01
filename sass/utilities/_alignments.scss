@@ -1,0 +1,18 @@
+.#{$b}-align {
+    &-left {
+        @include align(left);
+    }
+
+    &-right {
+        @include align(right);
+    }
+
+}
+
+.#{$b}-justify {
+    @include align(justify);
+}
+
+.#{$b}-center {
+    @include align(center);
+}

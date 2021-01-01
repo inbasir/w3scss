@@ -3,7 +3,7 @@
 */
 
 /*
-** A SASS version of W3.CSS by Jan Egil and Borge Refsnes https://github.com/JaniRefsnes/w3css
+** SASS version of W3.CSS by Jan Egil and Borge Refsnes https://github.com/JaniRefsnes/w3css
 */
 
 /*
@@ -47,6 +47,12 @@ TABLE OF CONTENTS
     # Forms
         - Fields
         - Buttons 
+# Utilities
+    - Alignments
+    - Margins
+    - Paddings
+    - Borders
+    - Sizes
 */
 
 // Abstracts
@@ -57,3 +63,6 @@ TABLE OF CONTENTS
 
 // Basic
 @import "basic/basic";
+
+// Utilities
+@import "utilities/utilities";
