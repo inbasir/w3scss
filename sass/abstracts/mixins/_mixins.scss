@@ -123,3 +123,62 @@ $u: px;
         @error "Size '#{$arg}' must be one of these values: tiny, small, medium, large, xlarge, xxlarge, xxxlarge or jumbo.";
     }
 }
+
+// Display
+@mixin display($arg) {
+    @if $arg == position {
+        position: absolute;
+    } @else if $arg == container {
+        position: relative;
+    } @else if $arg == topleft {
+        top: 0;
+        left: 0;
+    } @else if $arg == topright {
+        top: 0;
+        right: 0;
+    } @else if $arg == bottomleft {
+        bottom: 0;
+        left: 0;
+    } @else if $arg == bottomright {
+        bottom: 0;
+        right: 0;
+    } @else if $arg == middle {
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    } @else if $arg == left {
+        left: 0%;
+        top: 50%;
+        -ms-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+    } @else if $arg == right {
+        right: 0%;
+        top: 50%;
+        -ms-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+    } @else if $arg == topmiddle {
+        top: 0%;
+        left: 50%;
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    } @else if $arg == bottommiddle {
+        bottom: 0%;
+        left: 50%;
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    } @else {
+        @error "Display '#{$arg}' must be one of these values: position, container, topleft, topright, bottomleft, bottomright, middle, left, right, topmiddle or bottommiddle.";
+    }
+}
+
+// Float
+@mixin float($arg) {
+    @if $arg == left {
+        float: left!important;
+    } @else if $arg == right {
+        float: right!important;
+    } @else {
+        @error "Float '#{$arg}' must be either left or right.";
+    }
+}

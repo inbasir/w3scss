@@ -1,0 +1,78 @@
+.#{$b}-display {
+    &-position {
+        @include display(position);
+    }
+
+    &-container {
+        @include display(container);
+    }
+
+    &-topleft {
+        @include display(position);
+        @include display(topleft);
+    }
+
+    &-topright {
+        @include display(position);
+        @include display(topright);
+    }
+
+    &-bottomleft {
+        @include display(position);
+        @include display(bottomleft);
+    }
+
+    &-bottomright {
+        @include display(position);
+        @include display(bottomright);
+    }
+
+    &-middle {
+        @include display(position);
+        @include display(middle);
+    }
+
+    &-left {
+        @include display(position);
+        @include display(left);
+    }
+
+    &-right {
+        @include display(position);
+        @include display(right);
+    }
+
+    &-topmiddle {
+        @include display(position);
+        @include display(topmiddle);
+    }
+
+    &-bottommiddle {
+        @include display(position);
+        @include display(bottommiddle);
+    }
+}
+
+.#{$b}-left {
+    @include float(left);
+}
+
+.#{$b}-right {
+    @include float(right);
+}
+
+.#{$b}-top {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    top: 0;
+}
+
+.#{$b}-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    bottom: 0;
+}
