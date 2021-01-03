@@ -1,9 +1,21 @@
+.#{$b}-transparent,
+%bg-transparent {
+    background-color: transparent!important;
+}
+
 .#{$b}-hover {
 
     &-shadow {
-
         &:hover {
             box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
+
+    &-none {
+        &:hover {
+            @extend %bg-transparent;
+
+            box-shadow: none!important;
         }
     }
 }
