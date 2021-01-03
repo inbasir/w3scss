@@ -1,11 +1,4 @@
 .#{$b}-display {
-    &-position {
-        @include display(position);
-    }
-
-    &-container {
-        @include display(container);
-    }
 
     &-topleft {
         @include display(position);
@@ -50,6 +43,30 @@
     &-bottommiddle {
         @include display(position);
         @include display(bottommiddle);
+    }
+
+    &-container {
+        @include display(container);
+
+        &:hover {
+            .#{$b}-display-hover {
+                display: block;
+            }
+
+            span {
+                &.#{$b}-display-hover {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    &-hover {
+        display: none;
+    }
+
+    &-position {
+        @include display(position);
     }
 }
 
