@@ -1,0 +1,5 @@
+.#{$b}-section,
+%section { // extended by basic/formatting/typography/.#{$b}-code
+    @include margin(top);
+    @include margin(bottom);
+}
