@@ -61,18 +61,18 @@
     @include float(right);
 }
 
-.#{$b}-top {
+%fixed {
     position: fixed;
     width: 100%;
     z-index: 1;
+}
 
+.#{$b}-top {
+    @extend %fixed;
     top: 0;
 }
 
 .#{$b}-bottom {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-
+    @extend %fixed;
     bottom: 0;
 }
