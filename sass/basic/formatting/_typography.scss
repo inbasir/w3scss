@@ -68,8 +68,7 @@ mark {
     width: auto;
     background-color: #fff;
     padding: 8px 12px;
-    margin-top: 16px!important;
-    margin-bottom: 16px!important;
+    @extend %section;
     border-left: 4px solid #4CAF50;
     word-wrap: break-word;
 }
