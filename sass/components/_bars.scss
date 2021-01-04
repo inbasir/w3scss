@@ -1,0 +1,130 @@
+%click {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+%clickhovercolor {
+    background-color: #ccc;
+    color: #000;
+}
+
+.#{$b}-dropdown {
+    &-click {
+        @extend %click;
+
+        &:hover {
+            @extend %clickhovercolor;
+
+            &>.#{$b}-button {
+                &:first-child {
+                    @extend %clickhovercolor;
+                }
+            }
+        }
+    }
+
+    &-hover {
+        @extend %click;
+
+        &:hover {
+            .#{$b}-dropdown-content {
+                display: block;
+            }
+
+            &>.#{$b}-button {
+                &:first-child {
+                    @extend %clickhovercolor;
+                }
+            }
+        }
+
+        &:first-child {
+            @extend %clickhovercolor;
+        }
+    }
+
+    &-content {
+        cursor: auto;
+        color: #000;
+        background-color: #fff;
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+    }
+}
+
+.#{$b}-bar { // Horizontal Bar
+    width: 100%;
+    overflow: hidden;
+
+    #{&}-item {
+        padding: 8px 16px;
+        float: left;
+        width: auto;
+        border: none;
+        display: block;
+        outline: 0;
+    }
+
+    &-block { // Vertical Bar
+        .#{$b}-bar-item {
+            width: 100%;
+            display: block;
+            padding: 8px 16px;
+            text-align: left;
+            border: none;
+            white-space: normal;
+            float: none;
+            outline: 0;
+        }
+
+        &.#{$b}-center {
+            .#{$b}-bar-item {
+                @include align(center);
+            }
+        }
+
+        .#{$b}-dropdown-hover,
+        .#{$b}-dropdown-click {
+            width: 100%;
+
+            .#{$b}-dropdown-content {
+                min-width: 100%;
+            }
+
+            .#{$b}-button {
+                width: 100%;
+                text-align: left;
+                padding: 8px 16px;
+            }
+        }
+    }
+
+    .#{$b}-dropdown-hover,
+    .#{$b}-dropdown-click {
+        position: static;
+        float: left;
+    }
+
+    .#{$b}-button {
+        white-space: normal;
+    }
+
+    .#{$b}-center & {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+.#{$b}-sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto;
+}
