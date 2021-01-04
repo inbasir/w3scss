@@ -54,6 +54,23 @@ mark {
     color: #000;
 }
 
+
+.#{$b}-serif {
+    font-family: serif;
+}
+
+.#{$b}-sans-serif {
+    font-family: sans-serif;
+}
+
+.#{$b}-cursive {
+    font-family: cursive;
+}
+
+.#{$b}-monospace {
+    font-family: monospace;
+}
+
 .#{$b}-wide {
     letter-spacing: 4px;
 }
