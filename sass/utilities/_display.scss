@@ -93,3 +93,21 @@
     @extend %fixed;
     bottom: 0;
 }
+
+.#{$b}-hide {
+    display: none!important;
+}
+
+%show,
+.#{$b}-show {
+    display: block!important;
+
+    &-block {
+        @extend %show;
+    }
+
+    &-inline-block {
+        display: inline-block!important;
+    }
+}
+
