@@ -1,3 +1,8 @@
+.#{$b}-block {
+    display: block;
+    width: 100%;
+}
+
 .#{$b}-section,
 %section { // extended by basic/formatting/typography/.#{$b}-code
     @include margin(top);
