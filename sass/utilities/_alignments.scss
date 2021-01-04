@@ -1,12 +1,9 @@
-.#{$b}-align {
-    &-left {
-        @include align(left);
-    }
+.#{$b}-left-align {
+    @include align(left);
+}
 
-    &-right {
-        @include align(right);
-    }
-
+.#{$b}-right-align {
+    @include align(right);
 }
 
 .#{$b}-justify {
