@@ -86,4 +86,24 @@
             @extend %grayscale-max;
         }
     }
+
+    &-sepia {
+        @at-root {
+            .#{$b}-sepia {
+                filter:sepia(75%);
+
+                @at-root %sepia-max,
+                &-max {
+                    filter:sepia(100%);
+                }
+
+                &-min {
+                    filter:sepia(50%);
+                }
+            }
+        }
+        &:hover {
+            @extend %sepia-max;
+        }
+    }
 }
