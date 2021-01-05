@@ -1,3 +1,24 @@
+.#{$b}-ripple {
+    transition: opacity 0s;
+
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.#{$b}-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 00, 0, 0.5);
+    z-index: 2;
+}
+
 .#{$b}-transparent,
 %bg-transparent {
     background-color: transparent!important;
@@ -18,26 +39,28 @@
             box-shadow: none!important;
         }
     }
-}
 
-.#{$b}-ripple {
-    transition: opacity 0s;
+    &-opacity {
+        @at-root .#{$b}-opacity,
+        &:hover {
+            opacity: 0.60;
+        }
 
-    &:active {
-        opacity: 0.5;
+        &-off {
+            @at-root .#{$b}-opacity-off,
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        @at-root .#{$b}-opacity {
+            &-max {
+                opacity:0.25;
+            }
+    
+            &-min {
+                opacity:0.75;
+            }
+        }
     }
-}
-
-
-.#{$b}-overlay {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 00, 0, 0.5);
-    z-index: 2;
 }
