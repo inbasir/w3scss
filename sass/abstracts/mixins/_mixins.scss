@@ -182,3 +182,13 @@ $u: px;
         @error "Float '#{$arg}' must be either left or right.";
     }
 }
+
+// Clearfix
+@mixin clear() {
+    &::before,
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
