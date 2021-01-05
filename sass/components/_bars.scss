@@ -118,6 +118,8 @@
         display: inline-block;
         width: auto;
     }
+
+    @extend %clear;
 }
 
 .#{$b}-sidebar {

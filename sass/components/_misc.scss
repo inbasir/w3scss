@@ -12,6 +12,7 @@
 .#{$b}-container,
 %container { // extended by components/misc/.#{$b}-panel
     padding: 0.01em 16px;
+    @extend %clear;
 }
 
 .#{$b}-panel {

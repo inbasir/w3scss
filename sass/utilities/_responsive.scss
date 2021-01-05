@@ -1,0 +1,9 @@
+.#{$b}-responsive {
+    display: block;
+    overflow-x: auto;
+}
+
+.#{$b}-clear,
+%clear {
+    @include clear;
+}
