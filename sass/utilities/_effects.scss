@@ -63,4 +63,27 @@
             }
         }
     }
+
+    &-greyscale,
+    &-grayscale {
+        @at-root {
+            .#{$b}-greyscale,
+            .#{$b}-grayscale {
+                filter: grayscale(75%);
+                
+                @at-root %grayscale-max,
+                &-max {
+                    filter: grayscale(100%);
+                }
+                
+                &-min {
+                    filter: grayscale(50%);
+                }
+            }
+        }
+
+        &:hover {
+            @extend %grayscale-max;
+        }
+    }
 }
