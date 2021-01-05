@@ -8,3 +8,8 @@
         }
     }
 }
+
+.#{$b}-main,
+#main {
+    transition: margin-left .4s;
+}
