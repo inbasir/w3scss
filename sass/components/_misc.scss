@@ -12,11 +12,11 @@
 .#{$b}-container,
 %container { // extended by components/misc/.#{$b}-panel
     padding: 0.01em 16px;
-    @extend %clear;
+    @extend %clear; // extended from utilities/responsive/.#{$b}-clear
 }
 
 .#{$b}-panel {
-    @extend %container;
+    @extend %container; // extended from components/misc/.#{$b}-container
     margin-top: 16px;
     margin-bottom: 16px;
 }
@@ -32,16 +32,16 @@
 }
 
 .#{$b}-badge {
-    @extend %tag;
+    @extend %tag; // extended from components/misc/.#{$b}-tag
     @include circle;
 }
 
 .#{$b}-card,
-%card {
+%card { // extended by components/misc/.#{$b}-card-2
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 
     &-2 {
-        @extend %card;
+        @extend %card; // extended from components/misc/.#{$b}-card
     }
 
     &-4 {

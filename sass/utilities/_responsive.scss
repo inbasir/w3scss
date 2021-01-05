@@ -4,6 +4,8 @@
 }
 
 .#{$b}-clear,
-%clear {
+%clear { // extended by components/misc/.#{$b}-container
+        // extended by components/misc/.#{$b}-panel
+        // extended by components/bars/.#{$b}-bar
     @include clear;
 }

@@ -119,7 +119,7 @@
         width: auto;
     }
 
-    @extend %clear;
+    @extend %clear; // extended from utilities/responsive/.#{$b}-clear
 }
 
 .#{$b}-sidebar {
