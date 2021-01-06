@@ -192,3 +192,13 @@ $u: px;
         clear: both;
     }
 }
+
+@mixin animation($arg) {
+    animation: #{$arg};
+}
+
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
