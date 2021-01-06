@@ -1,5 +1,17 @@
 .#{$b}-animate {
 
+    @at-root .#{$b}-spin {
+        @include animation(#{$b}-spin 2s infinite linear);
+    }
+    @include keyframes(#{$b}-spin) {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(359deg);
+        }
+    }
+
     &-input {
         transition: width 0.4s ease-in-out;
 
