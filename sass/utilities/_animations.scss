@@ -27,6 +27,18 @@
         }
     }
 
+    &-opacity {
+        @include animation(opac 0.8s);
+    }
+    @include keyframes(opac) {
+        from {
+            opacity: 0;
+        } 
+        to {
+            opacity: 1;
+        }
+    }
+
     &-input {
         transition: width 0.4s ease-in-out;
 
