@@ -84,6 +84,21 @@
         }
     }
 
+    &-bottom {
+        position: relative;
+        @include animation(animatebottom 0.4s);
+    }
+    @include keyframes(animatebottom) {
+        from {
+            bottom: -300px;
+            opacity: 0;
+        } 
+        to {
+            bottom: 0;
+            opacity: 1;
+        }
+    }
+
     &-input {
         transition: width 0.4s ease-in-out;
 
