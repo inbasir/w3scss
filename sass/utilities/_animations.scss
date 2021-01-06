@@ -12,6 +12,21 @@
         }
     }
 
+    &-fading {
+        @include animation(fading 10s infinite);
+    }
+    @include keyframes(fading) {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
     &-input {
         transition: width 0.4s ease-in-out;
 
