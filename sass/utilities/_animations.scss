@@ -69,6 +69,21 @@
         }
     }
 
+    &-right {
+        position: relative;
+        @include animation(animateright 0.4s);
+    }
+    @include keyframes(animateright) {
+        from {
+            right: -300px;
+            opacity: 0;
+        } 
+        to {
+            right: 0;
+            opacity: 1;
+        }
+    }
+
     &-input {
         transition: width 0.4s ease-in-out;
 
