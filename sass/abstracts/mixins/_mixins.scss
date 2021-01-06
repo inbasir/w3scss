@@ -193,10 +193,12 @@ $u: px;
     }
 }
 
+// Animation
 @mixin animation($arg) {
     animation: #{$arg};
 }
 
+// Keyframe
 @mixin keyframes($name) {
     @keyframes #{$name} {
         @content;
