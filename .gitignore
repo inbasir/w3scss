@@ -2,4 +2,4 @@
 *.css.map
 *.min.css
 *.min.css.map
-*.code-workspace
+/css
