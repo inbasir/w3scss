@@ -86,3 +86,24 @@
 
     max-width: 980px;
 }
+
+.#{$b}-cell {
+    display: table-cell;
+
+    &-row {
+        display: table;
+        width: 100%;
+    }
+
+    &-top {
+        vertical-align: top;
+    }
+
+    &-middle {
+        vertical-align: middle;
+    }
+
+    &-bottom {
+        vertical-align: bottom;
+    }
+}
