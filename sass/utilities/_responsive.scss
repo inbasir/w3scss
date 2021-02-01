@@ -61,3 +61,28 @@
         width: 99.99999%;
     }
 }
+
+.#{$b}-rest {
+    overflow: hidden;
+}
+
+.#{$b}-stretch {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.#{$b}-auto,
+%auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.#{$b}-auto {
+    max-width: 1140px;
+}
+
+.#{$b}-content {
+    @extend %auto;
+
+    max-width: 980px;
+}
