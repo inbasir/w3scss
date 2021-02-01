@@ -3,9 +3,61 @@
     overflow-x: auto;
 }
 
+.#{$b}-row,
+.#{$b}-row-padding,
+.#{$b}-cell-row,
 .#{$b}-clear,
 %clear { // extended by components/misc/.#{$b}-container
         // extended by components/misc/.#{$b}-panel
         // extended by components/bars/.#{$b}-bar
     @include clear;
+}
+
+.#{$b}-col,
+.#{$b}-half,
+.#{$b}-third,
+.#{$b}-twothird,
+.#{$b}-threequarter,
+.#{$b}-quarter {
+    float: left;
+    width: 100%;
+}
+
+.#{$b}-col {
+    &.s1 {
+        width: 8.33333%;
+    }
+    &.s2 {
+        width: 16.66666%;
+    }
+    &.s3 {
+        width: 24.99999%;
+    }
+    &.s4 {
+        width: 33.33333%;
+    }
+    &.s5 {
+        width: 41.66666%;
+    }
+    &.s6 {
+        width: 49.99999%;
+    }
+    &.s7 {
+        width: 58.33333%;
+    }
+    &.s8 {
+        width: 66.66666%;
+    }
+    &.s9 {
+        width: 74.99999%;
+    }
+    &.s10 {
+        width: 83.33333%;
+    }
+    &.s11 {
+        width: 91.66666%;
+    }
+    &.s12 {
+        width: 99.99999%;
+    }
 }
