@@ -129,4 +129,16 @@
     position: fixed!important;
     z-index: 1;
     overflow: auto;
+
+    @include bp(bp-lg) {
+        &.#{$b}-collapse {
+            display: block!important;
+        }
+    }
+
+    @include bp(md) {
+        &.#{$b}-collapse {
+            display: none;
+        }
+    }
 }
