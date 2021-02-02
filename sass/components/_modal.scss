@@ -9,7 +9,15 @@
     height: 100%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4)
+    background-color: rgba(0, 0, 0, 0.4);
+
+    @include bp(xs) {
+        padding-top: 30px;
+    }
+
+    @include bp(sm) {
+        padding-top: 50px;
+    }
 }
 
 .#{$b}-modal-content {
@@ -19,4 +27,17 @@
     padding: 0;
     outline: 0;
     width: 600px;
+
+    @include bp(xs) {
+        margin: 0 10px;
+        width: auto!important;
+    }
+
+    @include bp(sm) {
+        width: 500px;
+    }
+
+    @include bp(bp-lg) {
+        width: 900px;
+    }
 }
