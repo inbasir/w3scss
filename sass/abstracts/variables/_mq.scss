@@ -1,12 +1,13 @@
 // Media Queries 
-$bp-xl: "(max-width: 1205px)";
+$xl: "(min-width: 1206px)";
 
-$large: "(min-width: 993px)";
-$bp-lg: "(max-width: 992px)";
+$lg: "(max-width: 1205px)";
+$bp-lg: "(min-width: 993px)";
 
-$bp-md: "(max-width: 768px)";
+$md: "(max-width: 992px)";
+$bp-md: "(min-width: 769px)";
 
-$small: "(min-width: 601px)";
-$bp-sm: "(max-width: 600px)";
+$sm: "(max-width: 768px)";
+$bp-sm: "(min-width: 601px)";
 
-
+$xs: "(max-width: 600px)";
