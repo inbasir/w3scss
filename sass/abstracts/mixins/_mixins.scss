@@ -196,34 +196,42 @@ $u: px;
 // Responsive
 @mixin bp($breakpoint) {
     @if $breakpoint == "xl" {
-        @media #{$bp-xl} {
-            @content;
-        }
-    } @else if $breakpoint == "large" {
-        @media #{$large} {
+        @media #{$xl} {
             @content;
         }
     } @else if $breakpoint == "lg" {
+        @media #{$lg} {
+            @content;
+        }
+    } @else if $breakpoint == "bp-lg" {
         @media #{$bp-lg} {
             @content;
         }
     } @else if $breakpoint == "md" {
+        @media #{$md} {
+            @content;
+        }
+    } @else if $breakpoint == "bp-md" {
         @media #{$bp-md} {
             @content;
         }
-    } @else if $breakpoint == "small" {
-        @media #{$small} {
+    } @else if $breakpoint == "sm" {
+        @media #{$sm} {
             @content;
         }
-    } @else if $breakpoint == "sm" {
+    } @else if $breakpoint == "bp-sm" {
         @media #{$bp-sm} {
             @content;
         }
-    } @else if $breakpoint == "lg-small" {
-        @media #{$bp-lg} and #{$small} {
+    } @else if $breakpoint == "xs" {
+        @media #{$xs} {
             @content;
         }
-    }    
+    } @else if $breakpoint == "md-bp-sm" {
+        @media #{$md} and #{$bp-sm} {
+            @content;
+        }
+    }
 }
 
 // Animation

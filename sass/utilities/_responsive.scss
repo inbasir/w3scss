@@ -60,8 +60,6 @@
     &.s12 {
         width: 99.99999%;
     }
-
-    @include bp()
 }
 
 .#{$b}-rest {
