@@ -120,7 +120,16 @@
     }
 }
 
-.#{$b}-main,
+%main,
 #main {
     transition: margin-left .4s;
+}
+
+.#{$b}-main {
+    @extend %main;
+
+    @include bp(md) {
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
 }
