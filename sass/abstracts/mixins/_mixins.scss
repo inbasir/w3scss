@@ -193,6 +193,39 @@ $u: px;
     }
 }
 
+// Responsive
+@mixin bp($breakpoint) {
+    @if $breakpoint == "xl" {
+        @media #{$bp-xl} {
+            @content;
+        }
+    } @else if $breakpoint == "large" {
+        @media #{$large} {
+            @content;
+        }
+    } @else if $breakpoint == "lg" {
+        @media #{$bp-lg} {
+            @content;
+        }
+    } @else if $breakpoint == "md" {
+        @media #{$bp-md} {
+            @content;
+        }
+    } @else if $breakpoint == "small" {
+        @media #{$small} {
+            @content;
+        }
+    } @else if $breakpoint == "sm" {
+        @media #{$bp-sm} {
+            @content;
+        }
+    } @else if $breakpoint == "lg-small" {
+        @media #{$bp-lg} and #{$small} {
+            @content;
+        }
+    }    
+}
+
 // Animation
 @mixin animation($arg) {
     animation: #{$arg};
