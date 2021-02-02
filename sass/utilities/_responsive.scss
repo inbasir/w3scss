@@ -68,24 +68,29 @@
         &.m2 {
             width: 16.66666%;
         }
+        @at-root .#{$b}-quarter,
         &.m3 {
             width: 24.99999%;
         }
+        @at-root .#{$b}-third,
         &.m4 {
             width: 33.33333%;
         }
         &.m5 {
             width: 41.66666%;
         }
+        @at-root .#{$b}-half,
         &.m6 {
             width: 49.99999%;
         }
         &.m7 {
             width: 58.33333%;
         }
+        @at-root .#{$b}-twothird,
         &.m8 {
             width: 66.66666%;
         }
+        @at-root .#{$b}-threequarter,
         &.m9 {
             width: 74.99999%;
         }
