@@ -96,6 +96,24 @@
 
 .#{$b}-hide {
     display: none!important;
+
+    @include bp(xs) {
+        &-small {
+            display: none!important;;
+        }
+    }
+
+    @include bp(bp-lg) {
+        &-large {
+            display: none!important;;
+        }
+    }
+
+    @include bp(md-bp-sm) {
+        &-medium {
+            display: none!important;;
+        }
+    }
 }
 
 %show,
