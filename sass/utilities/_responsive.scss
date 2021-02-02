@@ -162,6 +162,14 @@
 
 .#{$b}-auto {
     max-width: 1140px;
+
+    @include bp(lg) {
+        max-width: 95%;
+    }
+
+    @include bp(md) {
+        max-width: 100%;
+    }
 }
 
 .#{$b}-content {
