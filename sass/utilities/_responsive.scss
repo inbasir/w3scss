@@ -178,6 +178,13 @@
     max-width: 980px;
 }
 
+@include bp(xs) {
+    .#{$b}-mobile {
+        display: block;
+        width: 100%!important;
+    }
+}
+
 .#{$b}-cell {
     display: table-cell;
 
