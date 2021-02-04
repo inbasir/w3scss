@@ -22,6 +22,22 @@
                 }
             }
         }
+
+        @include bp(xs) {
+            &.#{$b}-mobile {
+                @include align(center);
+                width: 100%;
+
+                .#{$b}-dropdown-content {
+                    position: relative;
+                }
+
+                .#{$b}-btn,
+                .#{$b}-button {
+                    width: 100%;
+                }
+            }
+        }
     }
 
     &-hover {
@@ -41,6 +57,22 @@
 
         &:first-child {
             @extend %clickhovercolor;
+        }
+
+        @include bp(xs) {
+            &.#{$b}-mobile {
+                @include align(center);
+                width: 100%;
+
+                .#{$b}-dropdown-content {
+                    position: relative;
+                }
+
+                .#{$b}-btn,
+                .#{$b}-button {
+                    width: 100%;
+                }
+            }
         }
     }
 
@@ -120,6 +152,14 @@
     }
 
     @extend %clear; // extended from utilities/responsive/.#{$b}-clear
+
+    @include bp(xs) {
+        &-item {
+            &.#{$b}-mobile {
+                @include align(center);
+            }
+        }
+    }
 }
 
 .#{$b}-sidebar {
