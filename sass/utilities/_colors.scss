@@ -1,0 +1,828 @@
+.#{$b}-red {
+    color: $white!important;
+    background-color: $red!important;
+}
+
+.#{$b}-pink {
+    color: $white!important;
+    background-color: $pink!important;
+}
+
+.#{$b}-purple {
+    color: $white!important;
+    background-color: $purple!important;
+}
+
+.#{$b}-deep-purple {
+    color: $white!important;
+    background-color: $deep-purple!important;
+}
+
+.#{$b}-indigo {
+    color: $white!important;
+    background-color: $indigo!important;
+}
+
+.#{$b}-blue {
+    color: $white!important;
+    background-color: $blue!important;
+}
+
+.#{$b}-light-blue {
+    color: $black!important;
+    background-color: $light-blue!important;
+}
+
+.#{$b}-cyan {
+    color: $black!important;
+    background-color: $cyan!important;
+}
+
+.#{$b}-aqua {
+    color: $black!important;
+    background-color: $aqua!important;
+}
+
+.#{$b}-teal {
+    color: $white!important;
+    background-color: $teal!important;
+}
+
+.#{$b}-green {
+    color: $white!important;
+    background-color: $green!important;
+}
+
+.#{$b}-light-green {
+    color: $black!important;
+    background-color: $light-green!important;
+}
+
+.#{$b}-lime {
+    color: $black!important;
+    background-color: $lime!important;
+}
+
+.#{$b}-sand {
+    color: $black!important;
+    background-color: $sand!important;
+}
+
+.#{$b}-khaki {
+    color: $black!important;
+    background-color: $color__bg-khaki!important;
+}
+
+.#{$b}-yellow {
+    color: $black!important;
+    background-color: $color__bg-yellow!important;
+}
+
+.#{$b}-amber {
+    color: $black!important;
+    background-color: $amber!important;
+}
+
+.#{$b}-orange {
+    color: $black!important;
+    background-color: $orange!important;
+}
+
+.#{$b}-deep-orange {
+    color: $white!important;
+    background-color: $deep-orange!important;
+}
+
+.#{$b}-blue-grey {
+    color: $white!important;
+    background-color: $blue-grey!important;
+}
+
+.#{$b}-blue-gray {
+    @extend .#{$b}-blue-grey;
+}
+
+.#{$b}-brown {
+    color: $white!important;
+    background-color: $brown!important;
+}
+
+.#{$b}-white {
+    color: $black!important;
+    background-color: $white!important;
+}
+
+.#{$b}-light-grey {
+    color: $black!important;
+    background-color: $color__bg-light-grey!important;
+}
+
+.#{$b}-light-gray {
+    @extend .#{$b}-light-grey;
+}
+
+.#{$b}-grey {
+    color: $black!important;
+    background-color: $color__bg-grey!important;
+}
+
+.#{$b}-gray {
+    @extend .#{$b}-grey;
+}
+
+.#{$b}-dark-grey {
+    color: $white!important;
+    background-color: $color__bg-dark-grey!important;
+}
+
+.#{$b}-dark-gray {
+    @extend .#{$b}-dark-grey;
+}
+
+.#{$b}-black {
+    color: $white!important;
+    background-color: $black!important;
+}
+
+.#{$b}-pale-red {
+    color: $black!important;
+    background-color: $color__bg-pale-red!important;
+}
+
+.#{$b}-pale-yellow {
+    color: $black!important;
+    background-color: $color__bg-pale-yellow!important;
+}
+
+.#{$b}-pale-green {
+    color: $black!important;
+    background-color: $color__bg-pale-green!important;
+}
+
+.#{$b}-pale-blue {
+    color: $black!important;
+    background-color: $color__bg-pale-blue!important;
+}
+
+
+.#{$b}-text {
+    &-red {
+        color: $red!important;
+    }
+
+    &-pink {
+        color: $pink!important;
+    }
+
+    &-purple {
+        color: $purple!important;
+    }
+
+    &-deep-purple {
+        color: $deep-purple!important;
+    }
+
+    &-indigo {
+        color: $indigo!important;
+    }
+
+    &-blue {
+        color: $blue!important;
+    }
+
+    &-light-blue {
+        color: $light-blue!important;
+    }
+
+    &-cyan {
+        color: $cyan!important;
+    }
+
+    &-aqua {
+        color: $aqua!important;
+    }
+
+    &-teal {
+        color: $teal!important;
+    }
+
+    &-green {
+        color: $green!important;
+    }
+
+    &-light-green {
+        color: $light-green!important;
+    }
+
+    &-lime {
+        color: $lime!important;
+    }
+
+    &-sand {
+        color: $sand!important;
+    }
+
+    &-khaki {
+        color: $color__text-khaki!important;
+    }
+
+    &-yellow {
+        color: $color__text-yellow!important;
+    }
+
+    &-amber {
+        color: $amber!important;
+    }
+
+    &-orange {
+        color: $orange!important;
+    }
+
+    &-deep-orange {
+        color: $deep-orange!important;
+    }
+
+    &-blue-grey {
+        color: $blue-grey!important;
+    }
+
+    &-blue-gray {
+        @extend .#{$b}-text-blue-grey;
+    }
+
+    &-brown {
+        color: $brown!important;
+    }
+
+    &-white {
+        color: $white!important;
+    }
+
+    &-light-grey {
+        color: $color__text-light-grey!important;
+    }
+
+    &-light-gray {
+        @extend .#{$b}-text-light-grey;
+    }
+
+    &-grey {
+        color: $color__text-grey!important;
+    }
+
+    &-gray {
+        @extend .#{$b}-text-grey;
+    }
+
+    &-dark-grey {
+        color: $color__text-dark-grey!important;
+    }
+
+    &-dark-gray {
+        @extend .#{$b}-text-dark-grey;
+    }
+
+    &-black {
+        color: $black!important;
+    }
+}
+
+
+.#{$b}-border {
+    &-red {
+        border-color: $red!important;
+    }
+
+    &-pink {
+        border-color: $pink!important;
+    }
+
+    &-purple {
+        border-color: $purple!important;
+    }
+
+    &-deep-purple {
+        border-color: $deep-purple!important;
+    }
+
+    &-indigo {
+        border-color: $indigo!important;
+    }
+
+    &-blue {
+        border-color: $blue!important;
+    }
+
+    &-light-blue {
+        border-color: $light-blue!important;
+    }
+
+    &-cyan {
+        border-color: $cyan!important;
+    }
+
+    &-aqua {
+        border-color: $aqua!important;
+    }
+
+    &-teal {
+        border-color: $teal!important;
+    }
+
+    &-green {
+        border-color: $green!important;
+    }
+
+    &-light-green {
+        border-color: $light-green!important;
+    }
+
+    &-lime {
+        border-color: $lime!important;
+    }
+
+    &-sand {
+        border-color: $sand!important;
+    }
+
+    &-khaki {
+        border-color: $color__border-khaki!important;
+    }
+
+    &-yellow {
+        border-color: $color__border-yellow!important;
+    }
+
+    &-amber {
+        border-color: $amber!important;
+    }
+
+    &-orange {
+        border-color: $orange!important;
+    }
+
+    &-deep-orange {
+        border-color: $deep-orange!important;
+    }
+
+    &-blue-grey {
+        border-color: $blue-grey!important;
+    }
+
+    &-blue-gray {
+        @extend .#{$b}-border-blue-grey;
+    }
+
+    &-brown {
+        border-color: $brown!important;
+    }
+
+    &-white {
+        border-color: $white!important;
+    }
+
+    &-light-grey {
+        border-color: $color__border-light-grey!important;
+    }
+
+    &-light-gray {
+        @extend .#{$b}-border-light-grey;
+    }
+
+    &-grey {
+        border-color: $color__border-grey!important;
+    }
+
+    &-gray {
+        @extend .#{$b}-border-grey;
+    }
+
+    &-dark-grey {
+        border-color: $color__border-dark-grey!important;
+    }
+
+    &-dark-gray {
+        @extend .#{$b}-border-dark-grey;
+    }
+
+    &-black {
+        border-color: $black!important;
+    }
+
+    &-pale-red {
+        border-color: $color__border-pale-red!important;
+    }
+
+    &-pale-green {
+        border-color: $color__border-pale-green!important;
+    }
+
+    &-pale-yellow {
+        border-color: $color__border-pale-yellow!important;
+    }
+
+    &-pale-blue {
+        border-color: $color__border-pale-blue!important;
+    }
+}
+
+
+.#{$b}-hover {
+    &-red:hover {
+        @extend .#{$b}-red;
+    }
+
+    &-pink:hover {
+        @extend .#{$b}-pink;
+    }
+
+    &-purple:hover {
+        @extend .#{$b}-purple;
+    }
+
+    &-deep-purple:hover {
+        @extend .#{$b}-deep-purple;
+    }
+
+    &-indigo:hover {
+        @extend .#{$b}-indigo;
+    }
+
+    &-blue:hover {
+        @extend .#{$b}-blue;
+    }
+
+    &-light-blue:hover {
+        @extend .#{$b}-light-blue;
+    }
+
+    &-cyan:hover {
+        @extend .#{$b}-cyan;
+    }
+
+    &-aqua:hover {
+        @extend .#{$b}-aqua;
+    }
+
+    &-teal:hover {
+        @extend .#{$b}-teal;
+    }
+
+    &-green:hover {
+        @extend .#{$b}-green;
+    }
+
+    &-light-green:hover {
+        @extend .#{$b}-light-green;
+    }
+
+    &-lime:hover {
+        @extend .#{$b}-lime;
+    }
+
+    &-sand:hover {
+        @extend .#{$b}-sand;
+    }
+
+    &-khaki:hover {
+        @extend .#{$b}-khaki;
+    }
+
+    &-yellow:hover {
+        @extend .#{$b}-yellow;
+    }
+
+    &-amber:hover {
+        @extend .#{$b}-amber;
+    }
+
+    &-orange:hover {
+        @extend .#{$b}-orange;
+    }
+
+    &-deep-orange:hover {
+        @extend .#{$b}-deep-orange;
+    }
+
+    &-blue-grey:hover {
+        @extend .#{$b}-blue-grey;
+    }
+
+    &-blue-gray:hover {
+        @extend .#{$b}-blue-grey;
+    }
+
+    &-brown:hover {
+        @extend .#{$b}-brown;
+    }
+
+    &-white:hover {
+        @extend .#{$b}-white;
+    }
+
+    &-light-grey:hover {
+        @extend .#{$b}-light-grey;
+    }
+
+    &-light-gray:hover {
+        @extend .#{$b}-light-grey;
+    }
+
+    &-grey:hover {
+        @extend .#{$b}-grey;
+    }
+
+    &-gray:hover {
+        @extend .#{$b}-grey;
+    }
+
+    &-dark-grey:hover {
+        @extend .#{$b}-dark-grey;
+    }
+
+    &-dark-gray:hover {
+        @extend .#{$b}-dark-grey;
+    }
+
+    &-black:hover {
+        @extend .#{$b}-black;
+    }
+
+    &-pale-red:hover {
+        @extend .#{$b}-pale-red;
+    }
+
+    &-pale-yellow:hover {
+        @extend .#{$b}-pale-yellow;
+    }
+
+    &-pale-green:hover {
+        @extend .#{$b}-pale-green;
+    }
+
+    &-pale-blue:hover {
+        @extend .#{$b}-pale-blue;
+    }
+
+
+    &-text {
+        &-red:hover{
+            @extend .#{$b}-text-red;
+        }
+
+        &-pink:hover{
+            @extend .#{$b}-text-pink;
+        }
+
+        &-purple:hover {
+            @extend .#{$b}-text-purple;
+        }
+    
+        &-deep-purple:hover {
+            @extend .#{$b}-text-deep-purple;
+        }
+    
+        &-indigo:hover {
+            @extend .#{$b}-text-indigo;
+        }
+    
+        &-blue:hover {
+            @extend .#{$b}-text-blue;
+        }
+    
+        &-light-blue:hover {
+            @extend .#{$b}-text-light-blue;
+        }
+    
+        &-cyan:hover {
+            @extend .#{$b}-text-cyan;
+        }
+    
+        &-aqua:hover {
+            @extend .#{$b}-text-aqua;
+        }
+    
+        &-teal:hover {
+            @extend .#{$b}-text-teal;
+        }
+    
+        &-green:hover {
+            @extend .#{$b}-text-green;
+        }
+    
+        &-light-green:hover {
+            @extend .#{$b}-text-light-green;
+        }
+    
+        &-lime:hover {
+            @extend .#{$b}-text-lime;
+        }
+    
+        &-sand:hover {
+            @extend .#{$b}-text-sand;
+        }
+    
+        &-khaki:hover {
+            @extend .#{$b}-text-khaki;
+        }
+    
+        &-yellow:hover {
+            @extend .#{$b}-text-yellow;
+        }
+    
+        &-amber:hover {
+            @extend .#{$b}-text-amber;
+        }
+    
+        &-orange:hover {
+            @extend .#{$b}-text-orange;
+        }
+    
+        &-deep-orange:hover {
+            @extend .#{$b}-text-deep-orange;
+        }
+    
+        &-blue-grey:hover {
+            @extend .#{$b}-text-blue-grey;
+        }
+    
+        &-blue-gray:hover {
+            @extend .#{$b}-text-blue-grey;
+        }
+    
+        &-brown:hover {
+            @extend .#{$b}-text-brown;
+        }
+    
+        &-white:hover {
+            @extend .#{$b}-text-white;
+        }
+    
+        &-light-grey:hover {
+            @extend .#{$b}-text-light-grey;
+        }
+    
+        &-light-gray:hover {
+            @extend .#{$b}-text-light-grey;
+        }
+    
+        &-grey:hover {
+            @extend .#{$b}-text-grey;
+        }
+    
+        &-gray:hover {
+            @extend .#{$b}-text-grey;
+        }
+    
+        &-dark-grey:hover {
+            @extend .#{$b}-text-dark-grey;
+        }
+    
+        &-dark-gray:hover {
+            @extend .#{$b}-text-dark-grey;
+        }
+    
+        &-black:hover {
+            @extend .#{$b}-text-black;
+        }
+    }
+
+
+    &-border {
+        &-red:hover {
+            @extend .#{$b}-border-red;
+        }
+
+        &-pink:hover {
+            @extend .#{$b}-border-pink;
+        }
+
+        &-purple:hover {
+            @extend .#{$b}-border-purple;
+        }
+    
+        &-deep-purple:hover {
+            @extend .#{$b}-border-deep-purple;
+        }
+    
+        &-indigo:hover {
+            @extend .#{$b}-border-indigo;
+        }
+    
+        &-blue:hover {
+            @extend .#{$b}-border-blue;
+        }
+    
+        &-light-blue:hover {
+            @extend .#{$b}-border-light-blue;
+        }
+    
+        &-cyan:hover {
+            @extend .#{$b}-border-cyan;
+        }
+    
+        &-aqua:hover {
+            @extend .#{$b}-border-aqua;
+        }
+    
+        &-teal:hover {
+            @extend .#{$b}-border-teal;
+        }
+    
+        &-green:hover {
+            @extend .#{$b}-border-green;
+        }
+    
+        &-light-green:hover {
+            @extend .#{$b}-border-light-green;
+        }
+    
+        &-lime:hover {
+            @extend .#{$b}-border-lime;
+        }
+    
+        &-sand:hover {
+            @extend .#{$b}-border-sand;
+        }
+    
+        &-khaki:hover {
+            @extend .#{$b}-border-khaki;
+        }
+    
+        &-yellow:hover {
+            @extend .#{$b}-border-yellow;
+        }
+    
+        &-amber:hover {
+            @extend .#{$b}-border-amber;
+        }
+    
+        &-orange:hover {
+            @extend .#{$b}-border-orange;
+        }
+    
+        &-deep-orange:hover {
+            @extend .#{$b}-border-deep-orange;
+        }
+    
+        &-blue-grey:hover {
+            @extend .#{$b}-border-blue-grey;
+        }
+    
+        &-blue-gray:hover {
+            @extend .#{$b}-border-blue-grey;
+        }
+    
+        &-brown:hover {
+            @extend .#{$b}-border-brown;
+        }
+    
+        &-white:hover {
+            @extend .#{$b}-border-white;
+        }
+    
+        &-light-grey:hover {
+            @extend .#{$b}-border-light-grey;
+        }
+    
+        &-light-gray:hover {
+            @extend .#{$b}-border-light-grey;
+        }
+    
+        &-grey:hover {
+            @extend .#{$b}-border-grey;
+        }
+    
+        &-gray:hover {
+            @extend .#{$b}-border-grey;
+        }
+    
+        &-dark-grey:hover {
+            @extend .#{$b}-border-dark-grey;
+        }
+    
+        &-dark-gray:hover {
+            @extend .#{$b}-border-dark-grey;
+        }
+    
+        &-black:hover {
+            @extend .#{$b}-border-black;
+        }
+
+        &-pale-red:hover {
+            @extend .#{$b}-border-pale-red;
+        }
+
+        &-pale-green:hover {
+            @extend .#{$b}-border-pale-green;
+        }
+
+        &-pale-yellow:hover {
+            @extend .#{$b}-border-pale-yellow;
+        }
+
+        &-pale-blue:hover {
+            @extend .#{$b}-border-pale-blue;
+        }
+    }
+}
