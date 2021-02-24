@@ -2,30 +2,30 @@
   "name": "w3.scss",
   "version": "1.0.0",
   "description": "SASS version of W3.CSS",
-  "scripts": {
-    "watch:sass": "node-sass sass/ -o css/ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
-    "compile:css": "node-sass sass/ -o css/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/inbasir/w3scss.git"
-  },
+  "author": "inbasir",
+  "license": "MIT",
   "keywords": [
     "css-framework",
     "css",
     "sass",
     "scss"
   ],
-  "author": "inbasir",
-  "license": "MIT",
+  "homepage": "https://github.com/inbasir/w3scss#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inbasir/w3scss.git"
+  },
   "bugs": {
     "url": "https://github.com/inbasir/w3scss/issues"
   },
-  "homepage": "https://github.com/inbasir/w3scss#readme",
+  "dependencies": {
+    "sass": "^1.32.8"
+  },
   "devDependencies": {
     "node-sass": "^5.0.0"
   },
-  "dependencies": {
-    "sass": "^1.32.8"
+  "scripts": {
+    "watch:sass": "node-sass sass/ -o css/ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
+    "compile:css": "node-sass sass/ -o css/"
   }
 }
