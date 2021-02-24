@@ -2,9 +2,7 @@
   "name": "w3.scss",
   "version": "1.0.0",
   "description": "SASS version of W3.CSS",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/inbasir/w3scss.git"
@@ -20,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/inbasir/w3scss/issues"
   },
-  "homepage": "https://github.com/inbasir/w3scss#readme"
+  "homepage": "https://github.com/inbasir/w3scss#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
 }
