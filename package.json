@@ -22,10 +22,13 @@
     "sass": "^1.32.8"
   },
   "devDependencies": {
+    "clean-css": "^5.1.0",
+    "clean-css-cli": "^5.2.0",
     "node-sass": "^5.0.0"
   },
   "scripts": {
     "watch:sass": "node-sass sass/ -o css/ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
-    "compile:css": "node-sass sass/ -o css/ --source-map true --output-style expanded --indent-type tab --indent-width 1"
+    "compile:css": "node-sass sass/ -o css/ --source-map true --output-style expanded --indent-type tab --indent-width 1",
+    "minify:css": "cleancss css/*.css !css/*min.css -o css/ --batch --batch-suffix .min -O 1 -f breakWith=lf --source-map"
   }
 }
