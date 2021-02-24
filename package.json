@@ -26,6 +26,6 @@
   },
   "scripts": {
     "watch:sass": "node-sass sass/ -o css/ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
-    "compile:css": "node-sass sass/ -o css/"
+    "compile:css": "node-sass sass/ -o css/ --source-map true --output-style expanded --indent-type tab --indent-width 1"
   }
 }
