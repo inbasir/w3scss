@@ -2,7 +2,10 @@
   "name": "w3.scss",
   "version": "1.0.0",
   "description": "SASS version of W3.CSS",
-  "scripts": {},
+  "scripts": {
+    "watch:sass": "node-sass sass/ -o css/ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
+    "compile:css": "node-sass sass/ -o css/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/inbasir/w3scss.git"
@@ -21,5 +24,8 @@
   "homepage": "https://github.com/inbasir/w3scss#readme",
   "devDependencies": {
     "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.32.8"
   }
 }
