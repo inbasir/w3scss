@@ -1,0 +1,24 @@
+{
+  "name": "w3.scss",
+  "version": "1.0.0",
+  "description": "SASS version of W3.CSS",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inbasir/w3scss.git"
+  },
+  "keywords": [
+    "css-framework",
+    "css",
+    "sass",
+    "scss"
+  ],
+  "author": "inbasir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inbasir/w3scss/issues"
+  },
+  "homepage": "https://github.com/inbasir/w3scss#readme"
+}
