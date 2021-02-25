@@ -8,7 +8,11 @@
     "css-framework",
     "css",
     "sass",
-    "scss"
+    "scss",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "web"
   ],
   "homepage": "https://github.com/inbasir/w3scss#readme",
   "repository": {
@@ -18,17 +22,21 @@
   "bugs": {
     "url": "https://github.com/inbasir/w3scss/issues"
   },
-  "dependencies": {
-    "sass": "^1.32.8"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^10.2.4",
     "clean-css": "^5.1.0",
     "clean-css-cli": "^5.2.0",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.8"
   },
   "scripts": {
-    "watch:sass": "node-sass sass/ -o css/ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
-    "compile:css": "node-sass sass/ -o css/ --source-map true --output-style expanded --indent-type tab --indent-width 1",
-    "minify:css": "cleancss css/*.css !css/*min.css -o css/ --batch --batch-suffix .min -O 1 -f breakWith=lf --source-map"
+    "css": "npm-run-all css-compile css-prefix css-minify",
+    "css-compile": "node-sass sass/ --output css/ --output-style expanded --indent-type tab --indent-width 1 --source-map true --source-map-contents true",
+    "css-prefix": "postcss \"css/*.css\" \"!css/*min.css\" --replace \"css/*.css\" --use autoprefixer --no-map --map",
+    "css-minify": "cleancss \"css/*.css\" \"!css/*min.css\" --output css/ --batch --batch-suffix \".min\" -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources"
   }
 }

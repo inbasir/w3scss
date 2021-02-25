@@ -1,0 +1,7 @@
+# https://github.com/browserslist/browserslist#readme
+
+# Browsers that w3.scss support
+
+last 2 major version
+>= 0.5%
+IE 11
